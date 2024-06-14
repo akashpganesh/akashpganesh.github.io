@@ -9,6 +9,8 @@
 // });
 
 var toggle = document.getElementById("toggle-ul")
+// var body = document.getElementById("body")
+var go_top = document.getElementById("go-top")
 
 const toggleMenu = () => {
     toggle.style.transform = "translateX(50%)"
@@ -17,3 +19,14 @@ const toggleMenu = () => {
 const toggleClose = () => {
     toggle.style.transform = "translateX(100%)"
 }
+
+toggle.addEventListener('click',() => {
+    toggle.style.transform = "translateX(100%)"
+})
+
+window.addEventListener('scroll',() => {
+    go_top.style.display = "flex"
+    if(window.scrollY === 0) {
+        go_top.style.display = "none"
+    }
+})

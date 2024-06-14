@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 .banner-container {
@@ -271,6 +272,25 @@ footer p {
     margin-top: 0;
 }
 
+.go-top {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #237fb7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+}
+
+.go-top:hover {
+    background-color: #0ba6ff;
+}
+
 /* Image Page */
 
 .main-container {
@@ -282,7 +302,7 @@ footer p {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .img-container .images , .img-container .images-mb {
