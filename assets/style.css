@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner-container {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #EDF7FA;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-right: 100px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger{
+    display: none;
+    margin-right: 20px;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: black;
+    display: block;
+}
+
+.toggle-ul {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.toggle-ul ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toggle-ul ul li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.toggle-ul ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.toggle-ul ul li i {
+    font-size: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100% - 90px);
+}
+
+.profile-container img {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+}
+
+.profile-container .about button {
+    width: 208px;
+    height: 47px;
+    border: none;
+    background-color: #237fb7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-container .about button:hover {
+    background-color: #0ba6ff;
+}
+
+.skills-container {
+    padding: 10px;
+}
+
+.skills-container h2 , .education-container h2 {
+    margin-left: 10px
+}
+
+.skills {
+    padding: 10px;
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    scrollbar-width: none;
+}
+
+.skill-card {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-card h4 {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.skill-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.education-container {
+    padding: 10px;
+    background-color: #EDF7FA;
+}
+
+.education {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    flex: 1;
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edu-card h4 , .edu-card h3 , .edu-card p , .project-card h3, .project-card p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.edu-card p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.projects-container {
+    padding: 10px;
+}
+
+.projects-container h2 {
+    margin-left: 10px;
+}
+
+.projects {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.project-card div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card div a{
+    width: 50%;
+}
+
+.project-card div a button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #237fb7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-card div a button:hover {
+    background-color: #0ba6ff;
+}
+
+.contact-container {
+    padding: 20px;
+    background-color: #EDF7FA;
+}
+
+.contact-card {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 10px; */
+}
+
+.contact-card div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-card div i {
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer div a i {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+footer p {
+    margin-top: 0;
+}
+
+/* Image Page */
+
+.main-container {
+    background-color: #EDF7FA;
+    padding: 20px;
+}
+
+.img-container{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img-container .images , .img-container .images-mb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img-container .images img {
+    flex: 3;
+    width: 25%;
+    /* height: 250px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+}
+
+.img-container .images-mb img {
+    flex: 2;
+    width: 15%;
+    object-fit: cover;
+}
+
+/* project about page */
+
+.main-container .about-container {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width : 768px) {
+
+    nav ul {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        margin: auto;
+        height: calc(100% - 90px);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-container .about {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-container .image-container {
+        order: -1;
+    }
+
+    .edu-card {
+        width: 100%;
+        flex: auto;
+    }
+
+    .project-card {
+        width: 100%;
+        flex: auto;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .img-container .images img {
+        width: 100%;
+    }
+
+    .img-container .images-mb img {
+        width: 30%;
+    }
+
+}

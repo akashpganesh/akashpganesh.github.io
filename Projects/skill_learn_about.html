@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Learn</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="toggle-ul" id="toggle-ul">
+        <ul>
+            <li onclick="toggleClose()">Close<i class="fa-solid fa-xmark"></i></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="about-container">
+            <h1>Skill Learn</h1>
+            <p>Skill learn is a mobile application for learn IT Skill. It is developed by using Flutter as front end and NodeJS, MongoDB as back end. It has consist of 3 modules User, Tutor, Admin</p>
+            <h3>User</h3>
+            <ul>
+                <li>User can sign up and login to the application</li>
+                <li>User can enroll into a course and learn through videos</li>
+                <li>User can access the videos and document in the course after enrollment</li>
+                <li>User can chat with the tutor and other students through the chat group</li>
+                <li>User can ask doubts through the comment section of the video</li>
+            </ul>
+            <h3>Tutor</h3>
+            <ul>
+                <li>Tutor can sign up and login to the application</li>
+                <li>Tutor can add courses to the application</li>
+                <li>Tutor can add videos and documents to the course</li>
+                <li>Tutor can chat with the students through the chat group</li>
+            </ul>
+            <h3>Admin</h3>
+            <ul>
+                <li>Admin can view the list of users ang tutors and approve them</li>
+                <li>Admin can view the list of courses and approve it</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/AkashPGanesh"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/akash__p__ganesh/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://in.linkedin.com/in/akash-p-ganesh-8a0a5324a"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>@akashpganesh</p>
+    </footer>
+</body>
+<script src="../assets/script.js"></script>
+</html>
