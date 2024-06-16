@@ -221,8 +221,19 @@ nav ul li a {
 }
 
 .contact-container {
-    padding: 20px;
+    padding: 10px;
     background-color: #EDF7FA;
+}
+
+.contact-container h2 {
+    margin-left: 10px;
+}
+
+.contact {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .contact-card {
@@ -360,6 +371,11 @@ footer p {
     }
 
     .project-card {
+        width: 100%;
+        flex: auto;
+    }
+
+    .contact-card {
         width: 100%;
         flex: auto;
     }
