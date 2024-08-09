@@ -30,3 +30,13 @@ window.addEventListener('scroll',() => {
         go_top.style.display = "none"
     }
 })
+
+const scrollContainer = document.getElementById('skills');
+
+const scrollLeft_fn = () => {
+    scrollContainer.scrollLeft -= 250;
+}
+
+const scrollRight = () => {
+    scrollContainer.scrollLeft += 250;
+}
