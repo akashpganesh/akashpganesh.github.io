@@ -432,4 +432,7 @@ footer p {
         width: 30%;
     }
 
+    .skills-container div:hover .scroll-button{
+        display: none;
+    }
 }
