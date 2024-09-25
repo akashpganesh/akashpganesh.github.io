@@ -13,15 +13,18 @@ var toggle = document.getElementById("toggle-ul")
 var go_top = document.getElementById("go-top")
 
 const toggleMenu = () => {
-    toggle.style.transform = "translateX(50%)"
+    toggle.style.transform = "translateX(50%)";
+    document.body.style.overflow = "hidden";
 }
 
 const toggleClose = () => {
-    toggle.style.transform = "translateX(100%)"
+    toggle.style.transform = "translateX(100%)";
+    document.body.style.overflow = "auto";
 }
 
 toggle.addEventListener('click',() => {
-    toggle.style.transform = "translateX(100%)"
+    toggle.style.transform = "translateX(100%)";
+    document.body.style.overflow = "auto";
 })
 
 window.addEventListener('scroll',() => {
